@@ -14,6 +14,7 @@ date=`date`
 
 cd /home/jk
 
+wget -O index.html$TIM http://www.baidu.com/ && grep -v "访问量" index.html$TIM >>index$TIM
 
 [ $? = 0 ] && {
 MDy=`md5sum index|awk '{print $1}'`
@@ -22,6 +23,7 @@ MDe=`md5sum index$TIM|awk '{print $1}'`
                 #comm -13 index.html index.html$TIM >>$ER_LOG
                 diff -B -b -c index index$TIM >>$ER_LOG
                 diff -B -b -c index index$TIM >mail.txt
+                mail -s "baidu.com CAUTION." 188@139.com < mail.txt
         else 
                 echo "OK...">>$ER_LOG
                 echo -e "$date...">>$ER_LOG
