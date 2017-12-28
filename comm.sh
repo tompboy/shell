@@ -4,7 +4,7 @@
 # QQ:360254363/pboy@sina.cn
 # E-mail:cylcjy009@gmail.com
 # Website:www.pboy8.top pboy8.taobao.com
-# Desc:Compare two files
+# Desc:Compare two files..You can monitor your website index page, when some malware scripts invade...
 # Debug: optimize for some variables...2017-12-28
 # Version:V 0.1
 
